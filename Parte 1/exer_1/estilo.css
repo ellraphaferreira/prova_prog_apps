@@ -1,0 +1,19 @@
+*{padding: 0px; margin: 0px;}
+.df{display: flex;}
+.bgn{background-color: transparent;}
+.bgb{background-color: blue;}
+.bg2{background-color: rgb(190, 190, 190);}
+.bg3{background-color: rgb(224, 209, 73);}
+.bg4{background-color: rgb(23, 255, 2);}
+.bgbd{background-color: rgb(4, 4, 179);}
+.bg3d{background-color: rgb(190, 172, 5);}
+.bg4d{background-color: rgb(16, 158, 3);}
+.h60vh{height: 60vh;}
+.h20vh{height: 20vh;}
+.h10vh{height: 10vh;}
+.jcc{justify-content: center;}
+.aic{align-items: center;}
+.jcsp{justify-content: space-between;}
+.fdr{flex-direction: row;}
+.h33{height: (100/4);}
+.w33{width: 30%;}
