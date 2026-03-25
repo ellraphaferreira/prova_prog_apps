@@ -1,7 +1,7 @@
 async function procesarDados() {
     try {
        
-        const resposta =  require('./data.json');
+        const resposta =  require('./dados.json');
         const dados = await resposta.json();
 
 
