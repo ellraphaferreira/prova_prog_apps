@@ -1,0 +1,76 @@
+faça em javascript
+Você deve desenvolver um sistema simples para representar veículos de uma
+loja.
+O foco é aplicar herança, encapsulamento e organização de código utilizando
+classes, garantindo integridade dos dados e controle de estado dos objetos.
+Estrutura do sistema
+Classe base: Veiculo
+A classe Veiculo será a base do sistema e não deve ser instanciada
+diretamente.
+Atributos (privados)
+ id
+ marca
+ modelo
+ preco
+ disponivel
+
+Regras de negócio
+ id:
+o deve ser definido apenas na criação
+o não pode ser alterado posteriormente
+ marca:
+o não pode ser vazia
+o deve conter no mínimo 2 caracteres
+ modelo:
+o não pode ser vazio
+o deve conter no mínimo 2 caracteres
+ preco:
+o não pode ser negativo
+o não pode ser zero
+
+o não pode ser alterado se o veículo já tiver sido vendido
+ disponivel:
+o inicia como true
+o não pode ser alterado diretamente fora da classe
+ não deve ser possível acessar atributos diretamente fora da classe
+
+Métodos obrigatórios
+ método para obter o id
+ método para obter a marca e modelo
+ método para obter o preço
+ método para alterar o preço (com validação)
+o só pode alterar se o veículo estiver disponível
+ método para verificar se está disponível
+ método para vender o veículo
+o só pode ser vendido se estiver disponível
+o não pode ser vendido mais de uma vez sem retorno ao estoque
+o após a venda, disponivel deve ser false
+ método para exibir os dados
+Classes derivadas
+Classe Carro
+Representa um carro.
+Atributos adicionais:
+ portas
+Regras:
+ portas deve ser numérico
+ portas deve ser maior que 0
+Classe Moto
+Representa uma moto.
+Atributos adicionais:
+ cilindradas
+Regras:
+
+ cilindradas deve ser numérico
+ cilindradas deve ser maior que 0
+ deve estar dentro de um intervalo válido (ex: entre 50 e 2000)
+
+Aplicação
+ Criar objetos a partir das classes derivadas
+ Utilizar os métodos para:
+o alterar preço
+o realizar venda
+o retornar ao estoque
+ Demonstrar no código:
+o tentativa de alteração inválida
+o tentativa de venda inválida
+o funcionamento correto das regras de negócio

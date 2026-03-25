@@ -1,8 +1,7 @@
 async function procesarDados() {
     try {
        
-        const resposta =  require('./dados.json');
-        const dados = await resposta.json();
+        const dados =  require('./dados.json');
 
 
         const nomesProdutos = dados.map(p => p.nome);
@@ -16,7 +15,6 @@ async function procesarDados() {
         const caros = dados.filter(p => p.preco > 500);
 
         const estoqueBaixo = dados.filter(p => p.quantidade < 5);
-
 
 
         const totalGeral = dados.reduce((acc, p) => acc + (p.preco * p.quantidade), 0);
